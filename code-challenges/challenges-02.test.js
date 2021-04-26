@@ -10,9 +10,11 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 
 const raisedToTheThird = (arr) => {
   // Solution code here...
+
   let poweArr=arr.map(num => {return  Math.pow(num,3);})
 
   return poweArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -23,8 +25,10 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 
 const addOne = (arr) => {
   // Solution code here...
+
   let addArr =arr.map(add=> { return add+=1;});
   return addArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -35,8 +39,10 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 
 const addQuestion = (arr) => {
   // Solution code here...
+
   let stringArr = arr.map(str => {return `${str}?`});
   return stringArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,12 +57,14 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 
 const forLoopTwoToThe = (arr) => {
   // Solution code here...
+
   let powerArr = [];
   for(let i=0;i<arr.length;i++){
     
     powerArr.push( Math.pow(2,arr[i]));
   }
     return powerArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,9 +75,11 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+
   let powerArr1 = [];
   arr.forEach( num  =>  {powerArr1.push( Math.pow(2,num))} );
     return powerArr1;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -80,8 +90,10 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
+
   let powerArr = arr.map(num => {return Math.pow(2,num);} );
     return powerArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
