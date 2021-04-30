@@ -13,6 +13,8 @@ You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
   // Solution code here...
+  let fullname=people.map(namep=>{return (namep.firstName +' '+ namep.lastName)});
+  return fullname;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -24,6 +26,11 @@ Write a function named addValues that, given an array of numbers as input, uses 
 
 const addValues = (arr) => {
   // Solution code here...
+  let addarr= arr.reduce((acc,num,ind)=>{
+    return acc+=num;
+
+  },0);
+return addarr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -40,6 +47,10 @@ Write a function named addPurchases that, given an array of objects as input, us
 
 const addPurchases = (arr) => {
   // Solution code here...
+  let total=arr.reduce((acc,value,idx)=>{
+    return acc+=value.purchasePrice;
+  },0);
+  return total;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,6 +63,10 @@ Note: You may not use the array's built-in length property.
 
 const countNumberOfElements = (arr) => {
   // Solution code here...
+  let numelement=arr.reduce((acc,value,idx)=>{
+return idx+1
+  },0);
+return numelement;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -112,6 +127,12 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
+  let names=[];
+  arr.reduce((acc,value,idx)=>{
+    return names.push( value.name);
+  
+  },0);
+  return names;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -124,6 +145,11 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
+  let arrstr= str.split(' ');
+  let stri=arrstr.reduce((acc,value,idx)=>{
+    return acc+=value;
+  },arrstr.length);
+  return stri;
 };
 
 /* ------------------------------------------------------------------------------------------------
