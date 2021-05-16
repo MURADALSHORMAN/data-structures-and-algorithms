@@ -9,6 +9,7 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 function returnTen(str){
   // Solution code here...
+  return str.split('').splice(-10);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -27,6 +28,17 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
+ 
+  let maximum=0;
+  for (let index = 0; index < matrix.length; index++) {
+    for (let i = 0; i < matrix[i].length; i++) {
+
+      maximum = Math.max(maximum, matrix[index][i]);
+
+    }
+
+  }
+  return maximum;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -45,6 +57,13 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
+  let value = 0;
+  for (let index = 0; index < matrix.length; index++) {
+    for (let i = 0; i <matrix[index].length; i++) {
+      value += matrix[index][i];
+    }
+  }
+  return value;
 };
 
 
@@ -72,6 +91,15 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
+  let total = [];
+  for (let i in hoursOpen) {
+    let hourlyTotals = 0;
+    for (let j in cookieStores) {
+      hourlyTotals += cookieStores[j][i];
+    }
+    total.push(hourlyTotals);
+  }
+  return total;
 
 };
 
@@ -87,6 +115,9 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  let dataArr = [];
+  hours.forEach((hours, index) => dataArr.push({ sales: `${data[index]} cookies`, time: hours }));
+  return dataArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -112,6 +143,7 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  return arr[2].items[1].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
