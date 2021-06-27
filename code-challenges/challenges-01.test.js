@@ -11,7 +11,7 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 const addOne = (arr) => {
   // Solution code here...
   const newArray = [];
-  arr.forEach(num => newArray.push(num += 1));
+  arr.forEach(num => {newArray.push(num += 1)});
   return newArray;
 };
 
@@ -69,9 +69,9 @@ const greeting = (word) => {
 const speaker = (words, callback) => {
   // Solution code here...
   const newstringarr=[];
-  words.forEach(Arritems , index) => {
+  words.forEach(Arritems , index => {
     newstringarr.push(callback(words[index]));
-  })
+  });
 return newstringarr;
 };
 
