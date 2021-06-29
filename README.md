@@ -13,3 +13,8 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+
+## [array-binary-search Branch](https://github.com/MURADALSHORMAN/data-structures-and-algorithms/edit/array-binary-search)
+
+![](https://github.com/MURADALSHORMAN/data-structures-and-algorithms/blob/array-binary-search/lab3-401.JPG)
